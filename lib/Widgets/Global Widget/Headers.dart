@@ -1,4 +1,4 @@
-import 'package:colabomobileapp/Constants/TextThemes.dart';
+import '../../Constants/TextThemes.dart';
 import 'package:flutter/material.dart';
 
 class Headers extends StatefulWidget {

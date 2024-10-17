@@ -45,6 +45,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
               top: 16,
             ),
             child: Column(children: [
+              // The Welcome Text with Profile Image...
               const WelcomeProfile(
                 userName: "Vijay",
                 userProfileImg: "asset/images/profile_image.png",
@@ -52,11 +53,14 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
               const SizedBox(
                 height: 10,
               ),
+              // General Card is used Globally (has some elevation)
               GeneralCard(
+                // Card used to switch the workspace
                 child: WorkSpaceSwitchCard(
                   workspaceNum: workspaceData!.index,
                   workspaceImg: workspaceData.imagePath,
                   function: () {
+                    // Back to WorkSpace selection
                     Get.offAll(() => const WorkSpaceScreen());
                   },
                 ),
@@ -75,6 +79,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                 padding: EdgeInsets.only(bottom: 20),
                 child: StarAvatar(),
               ),
+              // All the place holder widgets
               Expanded(
                 child: FadingEdgeScrollView.fromScrollView(
                   gradientFractionOnStart: 0.0,

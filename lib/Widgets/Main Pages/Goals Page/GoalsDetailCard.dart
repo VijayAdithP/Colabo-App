@@ -1,8 +1,8 @@
 import 'dart:ui';
 
-import 'package:colabomobileapp/Constants/TextThemes.dart';
-import 'package:colabomobileapp/Constants/colors.dart';
-import 'package:colabomobileapp/Widgets/Global%20Widget/ProgressIndicator.dart';
+import '../../../Constants/TextThemes.dart';
+import '../../../Constants/colors.dart';
+import '../../Global%20Widget/ProgressIndicator.dart';
 import 'package:dotted_line/dotted_line.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';

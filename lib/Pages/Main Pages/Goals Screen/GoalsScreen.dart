@@ -1,17 +1,17 @@
 import 'dart:ui';
 
-import 'package:colabomobileapp/Constants/ConstantText.dart';
-import 'package:colabomobileapp/Constants/TextThemes.dart';
-import 'package:colabomobileapp/Constants/colors.dart';
-import 'package:colabomobileapp/Services/Providers/BasicProviders.dart';
-import 'package:colabomobileapp/Widgets/Global%20Widget/BottomSheetWIdget.dart';
-import 'package:colabomobileapp/Widgets/Global%20Widget/EmptyPlaceholder.dart';
-import 'package:colabomobileapp/Widgets/Global%20Widget/HashTagFilter.dart';
-import 'package:colabomobileapp/Widgets/Global%20Widget/Headers.dart';
-import 'package:colabomobileapp/Widgets/Global%20Widget/ResetAndApply.dart';
-import 'package:colabomobileapp/Widgets/Global%20Widget/SearchBar.dart';
-import 'package:colabomobileapp/Widgets/Global%20Widget/FilterTags.dart';
-import 'package:colabomobileapp/Widgets/Main%20Pages/Goals%20Page/ListItems.dart';
+import '../../../Constants/ConstantText.dart';
+import '../../../Constants/TextThemes.dart';
+import '../../../Constants/colors.dart';
+import '../../../Services/Providers/BasicProviders.dart';
+import '../../../Widgets/Global%20Widget/BottomSheetWIdget.dart';
+import '../../../Widgets/Global%20Widget/EmptyPlaceholder.dart';
+import '../../../Widgets/Global%20Widget/HashTagFilter.dart';
+import '../../../Widgets/Global%20Widget/Headers.dart';
+import '../../../Widgets/Global%20Widget/ResetAndApply.dart';
+import '../../../Widgets/Global%20Widget/SearchBar.dart';
+import '../../../Widgets/Global%20Widget/FilterTags.dart';
+import '../../../Widgets/Main%20Pages/Goals%20Page/ListItems.dart';
 import 'package:dotted_line/dotted_line.dart';
 import 'package:fading_edge_scrollview/fading_edge_scrollview.dart';
 import 'package:flutter/material.dart';
@@ -60,6 +60,7 @@ class _GoalsScreenState extends ConsumerState<GoalsScreen> {
                     ),
                     child: GestureDetector(
                       onTap: () {
+                        // to toggle the page to an empty one, also to save the state of that toggle...
                         setState(() {
                           ref.read(goalsStateProvider.notifier).toggle();
                         });
@@ -73,6 +74,7 @@ class _GoalsScreenState extends ConsumerState<GoalsScreen> {
                   Row(
                     children: [
                       Expanded(
+                        // common searchbar
                         child: SearchBarWidget(
                           horizontalpadd: 10,
                           verticalpadd: 12,
@@ -82,6 +84,8 @@ class _GoalsScreenState extends ConsumerState<GoalsScreen> {
                       const SizedBox(
                         width: 10,
                       ),
+
+                      // common filter widget
                       FilterWidget(
                         horizontalpadd: 10,
                         istappedOn: isTappedOn,
@@ -92,6 +96,7 @@ class _GoalsScreenState extends ConsumerState<GoalsScreen> {
                             isScrollControlled: true,
                             context: context,
                             builder: (context) {
+                              // Commonly used botton sheet (Global comp)
                               return BottomSheetWidget(
                                 child: Column(
                                   mainAxisSize: MainAxisSize.min,
@@ -317,11 +322,14 @@ class _GoalsScreenState extends ConsumerState<GoalsScreen> {
               isTappedOn
                   ? Expanded(
                       child: Center(
+                          // Create new Goal page (togglable)
                           child: Emptyplaceholder(
                         createText: ConstantText.GoalCreateGoal,
                         text: ConstantText.GoalCreateTextGoal,
                       )),
                     )
+
+                  // the actual Goal Page UI
                   : Expanded(
                       child: FadingEdgeScrollView.fromScrollView(
                         gradientFractionOnStart: 0.0,
@@ -349,6 +357,8 @@ class _GoalsScreenState extends ConsumerState<GoalsScreen> {
                                       dashColor: ConstantColors.borderGrey,
                                     ),
                                   ),
+
+                                // Common List for the Goals page
                                 CustomListItem(
                                   textOnlyContinerHeight:
                                       (index == 2 || index == 4) ? 10 : 0,

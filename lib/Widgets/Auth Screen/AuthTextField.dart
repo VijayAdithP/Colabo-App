@@ -1,7 +1,9 @@
-import 'package:colabomobileapp/Constants/ConstantText.dart';
-import 'package:colabomobileapp/Constants/TextThemes.dart';
-import 'package:colabomobileapp/Constants/colors.dart';
+import '../../Constants/ConstantText.dart';
+import '../../Constants/TextThemes.dart';
+import '../../Constants/colors.dart';
 import 'package:flutter/material.dart';
+
+// used in the login page
 
 class AuthTextField extends StatefulWidget {
   final String label;

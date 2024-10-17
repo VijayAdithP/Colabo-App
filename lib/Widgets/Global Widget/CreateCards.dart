@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:colabomobileapp/Constants/TextThemes.dart';
-import 'package:colabomobileapp/Constants/colors.dart';
+import '../../Constants/TextThemes.dart';
+import '../../Constants/colors.dart';
 
 class Createcards extends StatefulWidget {
   final String label;

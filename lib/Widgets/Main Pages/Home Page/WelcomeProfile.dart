@@ -1,5 +1,5 @@
-import 'package:colabomobileapp/Constants/TextThemes.dart';
-import 'package:colabomobileapp/Constants/colors.dart';
+import '../../../Constants/TextThemes.dart';
+import '../../../Constants/colors.dart';
 import 'package:flutter/material.dart';
 
 class WelcomeProfile extends StatelessWidget {

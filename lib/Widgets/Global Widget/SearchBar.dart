@@ -1,6 +1,6 @@
-import 'package:colabomobileapp/Constants/FlutterIcons.dart';
-import 'package:colabomobileapp/Constants/TextThemes.dart';
-import 'package:colabomobileapp/Constants/colors.dart';
+import '../../Constants/FlutterIcons.dart';
+import '../../Constants/TextThemes.dart';
+import '../../Constants/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:badges/badges.dart' as badges;
 

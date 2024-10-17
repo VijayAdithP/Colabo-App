@@ -1,9 +1,9 @@
 import 'dart:math';
 
-import 'package:colabomobileapp/Constants/TextThemes.dart';
-import 'package:colabomobileapp/Constants/colors.dart';
-import 'package:colabomobileapp/Widgets/Global%20Widget/ColoredContainer.dart';
-import 'package:colabomobileapp/Widgets/Main%20Pages/Goals%20Page/RadicalChart.dart';
+import '../../../Constants/TextThemes.dart';
+import '../../../Constants/colors.dart';
+import '../../Global%20Widget/ColoredContainer.dart';
+import '../Goals%20Page/RadicalChart.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:hexcolor/hexcolor.dart';

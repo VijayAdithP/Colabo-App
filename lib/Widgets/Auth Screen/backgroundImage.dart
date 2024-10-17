@@ -1,5 +1,7 @@
-import 'package:colabomobileapp/Constants/colors.dart';
+import '../../Constants/colors.dart';
 import 'package:flutter/material.dart';
+
+// used in the login page above the textfields
 
 class Backgroundimage extends StatelessWidget {
   const Backgroundimage({super.key});

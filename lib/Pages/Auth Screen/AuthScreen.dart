@@ -1,9 +1,9 @@
-import 'package:colabomobileapp/Constants/ConstantText.dart';
-import 'package:colabomobileapp/Constants/TextThemes.dart';
-import 'package:colabomobileapp/Constants/colors.dart';
-import 'package:colabomobileapp/Pages/WorkSpace%20Screen/WorkSpaceScreen.dart';
-import 'package:colabomobileapp/Widgets/Auth%20Screen/AuthTextField.dart';
-import 'package:colabomobileapp/Widgets/Auth%20Screen/backgroundImage.dart';
+import '../../Constants/ConstantText.dart';
+import '../../Constants/TextThemes.dart';
+import '../../Constants/colors.dart';
+import '../WorkSpace%20Screen/WorkSpaceScreen.dart';
+import '../../Widgets/Auth%20Screen/AuthTextField.dart';
+import '../../Widgets/Auth%20Screen/backgroundImage.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -42,6 +42,8 @@ class _AuthscreenState extends State<Authscreen> {
                     const SizedBox(
                       height: 30,
                     ),
+
+                    // the Auth Page textfields
                     AuthTextField(
                       controller: emailController,
                       label: ConstantText.AuthworkEmail,
@@ -54,6 +56,8 @@ class _AuthscreenState extends State<Authscreen> {
                     const SizedBox(
                       height: 30,
                     ),
+
+                    // the Auth Page textfields
                     AuthTextField(
                       forgorPass: true,
                       showObscure: true,
@@ -77,6 +81,7 @@ class _AuthscreenState extends State<Authscreen> {
                 ),
                 child: GestureDetector(
                   onTap: () {
+                    // to navigate to the workspace selection page
                     Get.offAll(() => const WorkSpaceScreen());
                   },
                   child: Container(

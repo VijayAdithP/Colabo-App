@@ -1,10 +1,10 @@
 import 'dart:ui';
 
-import 'package:colabomobileapp/Constants/TextThemes.dart';
-import 'package:colabomobileapp/Constants/colors.dart';
-import 'package:colabomobileapp/Widgets/Global%20Widget/BottomSheetWIdget.dart';
-import 'package:colabomobileapp/Widgets/Global%20Widget/ResetAndApply.dart';
-import 'package:colabomobileapp/Widgets/Global%20Widget/SearchBar.dart';
+import '../../Constants/TextThemes.dart';
+import '../../Constants/colors.dart';
+import 'BottomSheetWIdget.dart';
+import 'ResetAndApply.dart';
+import 'SearchBar.dart';
 import 'package:dotted_line/dotted_line.dart';
 import 'package:flutter/material.dart';
 

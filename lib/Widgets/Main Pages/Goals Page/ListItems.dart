@@ -1,7 +1,7 @@
-import 'package:colabomobileapp/Constants/ConstantText.dart';
-import 'package:colabomobileapp/Constants/TextThemes.dart';
-import 'package:colabomobileapp/Pages/Main%20Pages/Goals%20Screen/GoalsDetails.dart';
-import 'package:colabomobileapp/Widgets/Global%20Widget/ProgressIndicator.dart';
+import '../../../Constants/ConstantText.dart';
+import '../../../Constants/TextThemes.dart';
+import '../../../Pages/Main Pages/Goals%20Screen/GoalsDetails.dart';
+import '../../Global%20Widget/ProgressIndicator.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 

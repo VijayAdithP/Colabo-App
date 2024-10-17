@@ -1,11 +1,11 @@
-import 'package:colabomobileapp/Constants/TextThemes.dart';
-import 'package:colabomobileapp/Constants/colors.dart';
-import 'package:colabomobileapp/Widgets/Global%20Widget/GeneralCard.dart';
-import 'package:colabomobileapp/Widgets/Global%20Widget/SearchBar.dart';
-import 'package:colabomobileapp/Widgets/Main%20Pages/Goals%20Page/CompletedActionsWIdget.dart';
-import 'package:colabomobileapp/Widgets/Main%20Pages/Goals%20Page/GoalHiearchyList.dart';
-import 'package:colabomobileapp/Widgets/Main%20Pages/Goals%20Page/GoalsChart.dart';
-import 'package:colabomobileapp/Widgets/Main%20Pages/Goals%20Page/GoalsDetailCard.dart';
+import '../../../Constants/TextThemes.dart';
+import '../../../Constants/colors.dart';
+import '../../../Widgets/Global%20Widget/GeneralCard.dart';
+import '../../../Widgets/Global%20Widget/SearchBar.dart';
+import '../../../Widgets/Main%20Pages/Goals%20Page/CompletedActionsWIdget.dart';
+import '../../../Widgets/Main%20Pages/Goals%20Page/GoalHiearchyList.dart';
+import '../../../Widgets/Main%20Pages/Goals%20Page/GoalsChart.dart';
+import '../../../Widgets/Main%20Pages/Goals%20Page/GoalsDetailCard.dart';
 import 'package:flutter/material.dart';
 
 class GoalsDetails extends StatefulWidget {
@@ -56,20 +56,28 @@ class _GoalsDetailsState extends State<GoalsDetails> {
               ),
               child: GeneralCard(
                 showShadow: false,
+
+                // the card with the gradient is this...
                 child: GoalsDetailCard(),
               ),
             ),
             const Padding(
               padding:
                   EdgeInsets.only(top: 20, right: 15, left: 15, bottom: 15),
+
+              // the card with the fire icon is this..
               child: CompletedActionsWidget(),
             ),
             const Padding(
               padding: EdgeInsets.symmetric(
                 horizontal: 15,
               ),
+
+              // this is the radical chart...
               child: GoalsChart(),
             ),
+
+            // this is the Goals Hiearchy widget...
             Padding(
               padding: const EdgeInsets.only(top: 25),
               child: Container(
@@ -119,6 +127,8 @@ class _GoalsDetailsState extends State<GoalsDetails> {
                                   right: 16,
                                   left: 16,
                                 ),
+
+                                // all the listtiles...
                                 child: GoalHiearchyList(
                                   index: index,
                                 ));

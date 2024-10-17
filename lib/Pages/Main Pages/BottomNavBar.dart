@@ -1,7 +1,6 @@
 import 'package:colabomobileapp/Constants/FlutterIcons.dart';
 import 'package:colabomobileapp/Constants/TextThemes.dart';
 import 'package:colabomobileapp/Constants/colors.dart';
-import 'package:colabomobileapp/Constants/colors.dart';
 import 'package:colabomobileapp/Pages/Main%20Pages/ActionScreen.dart';
 import 'package:colabomobileapp/Pages/Main%20Pages/Goals%20Screen/GoalsScreen.dart';
 import 'package:colabomobileapp/Pages/Main%20Pages/HomeScreen.dart';
@@ -19,6 +18,7 @@ class MainPages extends StatefulWidget {
 class _MainPagesState extends State<MainPages> {
   int _selectedIndex = 0;
 
+// All the main screens(pages)
   List screens = [
     const HomeScreen(),
     const GoalsScreen(),

@@ -1,5 +1,5 @@
-import 'package:colabomobileapp/Constants/TextThemes.dart';
-import 'package:colabomobileapp/Constants/colors.dart';
+import '../../Constants/TextThemes.dart';
+import '../../Constants/colors.dart';
 import 'package:flutter/material.dart';
 
 import 'package:flutter_svg/svg.dart';
@@ -26,7 +26,7 @@ class Emptyplaceholder extends StatelessWidget {
         ),
         Text(
           textAlign: TextAlign.center,
-           text,
+          text,
           style: AppTextTheme.allTextTheme.bodyMedium!.copyWith(
             fontWeight: FontWeight.bold,
             fontSize: 15,

@@ -1,11 +1,11 @@
 import 'dart:ui';
 
-import 'package:colabomobileapp/Constants/TextThemes.dart';
-import 'package:colabomobileapp/Constants/colors.dart';
-import 'package:colabomobileapp/Widgets/Global%20Widget/CreateCards.dart';
-import 'package:colabomobileapp/Widgets/Global%20Widget/HashTagFilter.dart';
-import 'package:colabomobileapp/Widgets/Global%20Widget/ResetAndApply.dart';
-import 'package:colabomobileapp/Widgets/Global%20Widget/FilterTags.dart';
+import '../../Constants/TextThemes.dart';
+import '../../Constants/colors.dart';
+import 'CreateCards.dart';
+import 'HashTagFilter.dart';
+import 'ResetAndApply.dart';
+import 'FilterTags.dart';
 import 'package:flutter/material.dart';
 
 class FloatingButton extends StatelessWidget {

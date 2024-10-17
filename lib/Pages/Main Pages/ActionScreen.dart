@@ -51,6 +51,8 @@ class _ActionScreenState extends ConsumerState<ActionScreen> {
               : ConstantColors.secondaryScaffoldBackgroundColor,
           floatingActionButton: const Align(
             alignment: Alignment(1, 0.75),
+
+            // Button to add a new Action...
             child: FloatingButton(),
           ),
           body: Padding(
@@ -82,6 +84,7 @@ class _ActionScreenState extends ConsumerState<ActionScreen> {
                   Row(
                     children: [
                       Expanded(
+                        // Commonly used SearchBar widget...
                         child: SearchBarWidget(
                           horizontalpadd: 10,
                           verticalpadd: 12,
@@ -91,6 +94,8 @@ class _ActionScreenState extends ConsumerState<ActionScreen> {
                       const SizedBox(
                         width: 10,
                       ),
+
+                      // Commenly used filter widget...
                       FilterWidget(
                         horizontalpadd: 10,
                         istappedOn: isTappedOn,
@@ -354,7 +359,7 @@ class _ActionScreenState extends ConsumerState<ActionScreen> {
                               );
                             }),
                       ),
-                    ),
+                    ),      
             ]),
           ),
         ),

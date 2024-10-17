@@ -49,6 +49,8 @@ class _WorSspacSscreenState extends ConsumerState<WorkSpaceScreen> {
                   vertical: 20,
                   horizontal: 16,
                 ),
+
+                // Common header for all pages
                 child: Headers(
                   headerCount: Images.length,
                   headerText: "Workspace",
@@ -84,13 +86,13 @@ class _WorSspacSscreenState extends ConsumerState<WorkSpaceScreen> {
                                   );
                               Get.offAll(() => const MainPages());
                             },
+
+                            // Main WorkSpace Cards
                             child: WorkSpaceCard(
                                 cardHeight: 160,
                                 cardWidth: 160,
                                 workspaceCount: indexfinal,
-                                workspaceImg: Images[index]
-                                // workspaceImg: 'asset/images/tower.png',
-                                ),
+                                workspaceImg: Images[index]),
                           );
                         }),
                   ),
